@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ***REMOVED*** : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
     Rigidbody2D rigid;
     [SerializeField] float torqueAmount = 5000f;
     [SerializeField] float boostSpeed = 50f;

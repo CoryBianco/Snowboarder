@@ -15,7 +15,7 @@ public class FinishLine : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
-            FindObjectOfType<***REMOVED***>().DisableControls();
+            FindObjectOfType<PlayerController>().DisableControls();
             finishEffect.Play();
             GetComponent<AudioSource>().Play();
             Invoke("ReloadScene", delay);
