@@ -18,7 +18,11 @@ public class CrashDetector : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Ground" && !playedSound) {
             playedSound = true;
+<<<<<<< HEAD
             FindObjectOfType<*****>().DisableControls();
+=======
+            FindObjectOfType<PlayerController>().DisableControls();
+>>>>>>> e7ffa40acf1c21c63ff0d35ba6754fb096c2aaff
             crashEffect.Play();
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
             Invoke("ReloadScene", delay);
